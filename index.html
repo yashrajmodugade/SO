@@ -1,0 +1,1067 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Small to Online builds affordable websites, custom software and AI-powered digital solutions for small businesses and startups.">
+<title>Small to Online | From Small to Online</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --navy: #07172F;
+    --blue: #087DE0;
+    --cyan: #08C8F5;
+    --white: #FFFFFF;
+    --muted: #A9B9CC;
+    --card: #0D2342;
+    --border: rgba(255,255,255,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--navy);
+    color: var(--white);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1150px, 90%);
+    margin: auto;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 23px;
+    border-radius: 9px;
+    background: var(--blue);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    transition: .3s;
+    border: 1px solid transparent;
+}
+
+.btn:hover {
+    background: var(--cyan);
+    color: var(--navy);
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: transparent;
+    border-color: var(--border);
+}
+
+.btn-outline:hover {
+    border-color: var(--cyan);
+    color: white;
+    background: rgba(8,200,245,.08);
+}
+
+/* NAVIGATION */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(7,23,47,.88);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.brand img {
+    width: 43px;
+    height: 43px;
+    object-fit: contain;
+}
+
+.brand span {
+    color: var(--cyan);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-size: 13px;
+    color: var(--muted);
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: var(--cyan);
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 125px 0 75px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    right: -180px;
+    top: 100px;
+    background: radial-gradient(circle, rgba(8,125,224,.2), transparent 70%);
+    pointer-events: none;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 9px 15px;
+    border: 1px solid rgba(8,200,245,.3);
+    color: var(--cyan);
+    border-radius: 30px;
+    font-size: 12px;
+    margin-bottom: 25px;
+    background: rgba(8,200,245,.06);
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 70px);
+    line-height: 1.08;
+    letter-spacing: -3px;
+    margin-bottom: 25px;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, var(--blue), var(--cyan));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 570px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-top: 32px;
+}
+
+/* HERO VISUAL */
+
+.hero-visual {
+    min-height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.visual-circle {
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    border: 1px solid rgba(8,200,245,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: float 5s ease-in-out infinite;
+}
+
+.visual-circle::before,
+.visual-circle::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(8,125,224,.25);
+}
+
+.visual-circle::before {
+    inset: 25px;
+}
+
+.visual-circle::after {
+    inset: 55px;
+}
+
+.visual-logo {
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    z-index: 2;
+    filter: drop-shadow(0 0 25px rgba(8,200,245,.35));
+}
+
+.float-card {
+    position: absolute;
+    padding: 15px 19px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: rgba(13,35,66,.95);
+    font-size: 12px;
+    color: var(--cyan);
+    box-shadow: 0 15px 35px rgba(0,0,0,.2);
+}
+
+.card-one {
+    top: 35px;
+    right: 0;
+    animation: float 4s ease-in-out infinite;
+}
+
+.card-two {
+    bottom: 45px;
+    left: 0;
+    animation: float 5s ease-in-out infinite reverse;
+}
+
+.card-three {
+    bottom: 0;
+    right: 25px;
+    animation: float 4.5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-13px); }
+}
+
+/* SECTION COMMON */
+
+section {
+    padding: 100px 0;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 55px;
+}
+
+.section-heading .label {
+    color: var(--cyan);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    font-size: clamp(30px, 4vw, 43px);
+    margin: 15px 0;
+    letter-spacing: -1px;
+}
+
+.section-heading p {
+    color: var(--muted);
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* SERVICES */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    padding: 32px 27px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    transition: .35s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--cyan);
+    box-shadow: 0 15px 40px rgba(8,125,224,.12);
+}
+
+.service-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: rgba(8,125,224,.15);
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+.service-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* PROCESS */
+
+.process {
+    background: rgba(255,255,255,.02);
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.process-card {
+    padding: 25px 20px;
+    border-left: 2px solid var(--blue);
+}
+
+.process-number {
+    color: var(--cyan);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.process-card h3 {
+    margin: 15px 0 10px;
+    font-size: 17px;
+}
+
+.process-card p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--muted);
+}
+
+/* ABOUT */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.about-content h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.about-content p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 16px;
+}
+
+.about-box {
+    background: linear-gradient(140deg, #0D2B50, #0A1D38);
+    padding: 40px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+}
+
+.about-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-box p {
+    color: var(--muted);
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* QUICK LINKS */
+
+.quick-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.quick-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    transition: .3s;
+}
+
+.quick-link:hover {
+    transform: translateY(-5px);
+    border-color: var(--cyan);
+    background: #102C4F;
+}
+
+.link-icon {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    background: rgba(8,125,224,.17);
+    font-size: 21px;
+}
+
+.quick-link strong {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.quick-link small {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/* CONTACT */
+
+.contact {
+    background: linear-gradient(140deg, #0A2140, #07172F);
+    text-align: center;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.contact-content {
+    max-width: 650px;
+    margin: auto;
+}
+
+.contact h2 {
+    font-size: clamp(30px, 4vw, 43px);
+    margin: 17px 0;
+}
+
+.contact p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 35px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-brand {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.footer-brand span {
+    color: var(--cyan);
+}
+
+.footer-content p {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.footer-links a:hover {
+    color: var(--cyan);
+}
+
+/* REVEAL ANIMATION */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 850px) {
+    .hero-grid,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-visual {
+        min-height: 350px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+}
+
+@media(max-width: 650px) {
+    .navbar {
+        height: 68px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        padding: 25px 5%;
+        background: #07172F;
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 23px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero {
+        padding-top: 115px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero-visual {
+        min-height: 300px;
+    }
+
+    .visual-circle {
+        width: 240px;
+        height: 240px;
+    }
+
+    .visual-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .float-card {
+        font-size: 10px;
+        padding: 11px;
+    }
+
+    section {
+        padding: 75px 0;
+    }
+
+    .services-grid,
+    .process-grid,
+    .quick-links {
+        grid-template-columns: 1fr;
+    }
+
+    .about-box {
+        padding: 28px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media(prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+
+        <a href="#home" class="brand">
+            <img src="logo.png" alt="Small to Online logo">
+            <div>Small to <span>Online.</span></div>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#founder">Founder</a>
+            <a href="#contact" class="btn">Get Started →</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+    <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+            <span class="tag">Technology for Everyone</span>
+
+            <h1>
+                Big ideas deserve a
+                <span class="gradient-text">digital presence.</span>
+            </h1>
+
+            <p>
+                We help small businesses, entrepreneurs and startups
+                turn their ideas into reality through affordable websites,
+                custom software and AI-powered solutions.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Start Your Project →</a>
+                <a href="#services" class="btn btn-outline">Explore Services</a>
+            </div>
+
+        </div>
+
+        <div class="hero-visual reveal">
+
+            <div class="visual-circle">
+                <img src="logo.png" alt="Small to Online" class="visual-logo">
+            </div>
+
+            <div class="float-card card-one">✦ Website Development</div>
+            <div class="float-card card-two">⚙ Custom Software</div>
+            <div class="float-card card-three">✧ AI-Powered Solutions</div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="label">What We Do</span>
+            <h2>Technology that moves you forward.</h2>
+            <p>
+                Practical digital solutions designed to help your business
+                establish its presence and work smarter.
+            </p>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card reveal">
+                <div class="service-icon">🌐</div>
+                <h3>Website Development</h3>
+                <p>
+                    Modern, responsive static and dynamic websites
+                    designed to give your business a professional
+                    online identity.
+                </p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon">⚙️</div>
+                <h3>Custom Software Development</h3>
+                <p>
+                    Useful software solutions designed around your
+                    business requirements to simplify everyday work.
+                </p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon">🤖</div>
+                <h3>AI-Powered Solutions</h3>
+                <p>
+                    AI-assisted website and software development
+                    that helps make digital solutions more accessible
+                    and efficient.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS -->
+
+<section class="process">
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="label">Our Approach</span>
+            <h2>From idea to reality.</h2>
+            <p>A simple and transparent approach to building your digital solution.</p>
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process-card reveal">
+                <span class="process-number">01 / UNDERSTAND</span>
+                <h3>Understand</h3>
+                <p>We listen to your idea and understand your requirements.</p>
+            </div>
+
+            <div class="process-card reveal">
+                <span class="process-number">02 / PLAN</span>
+                <h3>Plan</h3>
+                <p>We plan a suitable solution around your goals and budget.</p>
+            </div>
+
+            <div class="process-card reveal">
+                <span class="process-number">03 / DEVELOP</span>
+                <h3>Develop</h3>
+                <p>We build your website or software using modern technology.</p>
+            </div>
+
+            <div class="process-card reveal">
+                <span class="process-number">04 / DELIVER</span>
+                <h3>Deliver</h3>
+                <p>We deliver your completed digital solution.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+    <div class="container about-grid">
+
+        <div class="about-content reveal">
+
+            <span class="label">About Small to Online</span>
+
+            <h2>
+                Small businesses.
+                <span class="gradient-text">Big digital possibilities.</span>
+            </h2>
+
+            <p>
+                Small to Online is an emerging technology startup
+                focused on making digital technology accessible and
+                affordable for small businesses, entrepreneurs and startups.
+            </p>
+
+            <p>
+                We build modern websites, custom software and AI-powered
+                digital solutions to help businesses establish and grow
+                their online presence.
+            </p>
+
+            <p>
+                Our goal is simple: every small business deserves an
+                opportunity to grow in the digital world, regardless
+                of its size or budget.
+            </p>
+
+            <a href="#contact" class="btn">Let's Work Together →</a>
+
+        </div>
+
+        <div class="about-box reveal">
+            <h3>Your Business. Our Technology.</h3>
+            <p>
+                We believe that great ideas should not stay offline
+                because of limited resources. Our mission is to make
+                technology simpler, smarter and more accessible.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOUNDER -->
+
+<section id="founder">
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="label">Behind the Idea</span>
+            <h2>Meet the Founder</h2>
+            <p>
+                Every idea has a person behind it. Get to know the person
+                building Small to Online.
+            </p>
+        </div>
+
+        <div class="about-box reveal" style="max-width:750px; margin:auto; text-align:center;">
+
+            <h3>Yashraj Modugade</h3>
+
+            <p>
+                Founder of Small to Online. A student passionate about
+                technology, website development and software innovation.
+                Building digital solutions with one simple belief:
+                technology should be accessible to everyone.
+            </p>
+
+            <a href="https://yashrajmodugade.tech"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn">
+                View My Portfolio ↗
+            </a>
+
+        </div>
+
+        <div class="quick-links">
+
+            <a href="https://yashrajmodugade.tech"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="quick-link reveal">
+
+                <span class="link-icon">👨‍💻</span>
+
+                <span>
+                    <strong>Explore Founder's Portfolio</strong>
+                    <small>Know more about the founder →</small>
+                </span>
+
+            </a>
+
+            <a href="https://www.instagram.com/smalltoonline/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="quick-link reveal">
+
+                <span class="link-icon">📸</span>
+
+                <span>
+                    <strong>Follow Small to Online</strong>
+                    <small>Visit our Instagram page →</small>
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+    <div class="container contact-content reveal">
+
+        <span class="label">Let's Get Started</span>
+
+        <h2>Have an idea? Let's build it.</h2>
+
+        <p>
+            Whether you are a small business owner, entrepreneur or
+            startup founder, tell us about your idea. Let's explore
+            how technology can help you.
+        </p>
+
+        <!-- Replace this URL with your actual Google Form link -->
+        <a href="https://forms.gle/kz6NhTAmr4dRGmoPA"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn">
+            Contact Us Through Google Form →
+        </a>
+
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="container footer-content">
+
+        <div>
+            <div class="footer-brand">
+                Small to <span>Online.</span>
+            </div>
+            <p style="margin-top:8px;">From Small to Online.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="https://yashrajmodugade.tech"
+               target="_blank"
+               rel="noopener noreferrer">Founder</a>
+
+            <a href="https://www.instagram.com/smalltoonline/"
+               target="_blank"
+               rel="noopener noreferrer">Instagram</a>
+
+            <a href="#contact">Contact</a>
+        </div>
+
+        <p>© <span id="year"></span> Small to Online. All rights reserved.</p>
+
+    </div>
+</footer>
+
+<script>
+
+// MOBILE NAVIGATION
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+
+    const isOpen = navLinks.classList.contains("active");
+
+    menuBtn.textContent = isOpen ? "✕" : "☰";
+    menuBtn.setAttribute("aria-expanded", isOpen);
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        menuBtn.textContent = "☰";
+        menuBtn.setAttribute("aria-expanded", "false");
+    });
+});
+
+// SCROLL REVEAL
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+        }
+
+    });
+
+}, {
+    threshold: 0.12
+});
+
+document.querySelectorAll(".reveal").forEach(element => {
+    observer.observe(element);
+});
+
+// AUTOMATIC COPYRIGHT YEAR
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
