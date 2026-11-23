@@ -1,1067 +1,293 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Small to Online builds affordable websites, custom software and AI-powered digital solutions for small businesses and startups.">
-<title>Small to Online | From Small to Online</title>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Small to Online | Affordable Websites, Custom Software &amp; AI Solutions</title>
+<meta name="description" content="Small to Online builds affordable websites, custom software and AI-powered solutions for small businesses and startups. Take your idea online today.">
+<meta name="keywords" content="small business website, affordable web development, custom software, AI solutions, startup website, website developer India, Small to Online">
+<meta name="author" content="Yashraj Modugade">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#2D4BFF">
+<link rel="canonical" href="https://smalltoonline.in/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Small to Online">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Small to Online | From Small to Online">
+<meta property="og:description" content="Affordable websites, custom software and AI-powered solutions for small businesses, entrepreneurs and startups.">
+<meta property="og:url" content="https://smalltoonline.in/">
+<meta property="og:image" content="https://smalltoonline.in/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Small to Online | From Small to Online">
+<meta name="twitter:description" content="Big ideas deserve a digital presence. Websites, software and AI for small businesses.">
+<meta name="twitter:image" content="https://smalltoonline.in/logo.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect width='34' height='34' rx='10' fill='%232D4BFF'/%3E%3Crect x='7' y='19' width='8' height='8' rx='2' fill='%23fff'/%3E%3Crect x='13' y='8' width='14' height='14' rx='3.5' fill='%23FFC83D'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;600;800&amp;family=Figtree:wght@400;600;700&amp;display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Small to Online","url":"https://smalltoonline.in/","logo":"https://smalltoonline.in/logo.png","description":"Affordable websites, custom software and AI-powered digital solutions for small businesses, entrepreneurs and startups.","founder":{"@type":"Person","name":"Yashraj Modugade","url":"https://yashrajmodugade.tech"},"sameAs":["https://www.instagram.com/smalltoonline/"],"areaServed":"IN","serviceType":["Website development","Custom software development","AI-powered solutions"]}</script>
 <style>
-:root {
-    --navy: #07172F;
-    --blue: #087DE0;
-    --cyan: #08C8F5;
-    --white: #FFFFFF;
-    --muted: #A9B9CC;
-    --card: #0D2342;
-    --border: rgba(255,255,255,0.1);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    background: var(--navy);
-    color: var(--white);
-    overflow-x: hidden;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.container {
-    width: min(1150px, 90%);
-    margin: auto;
-}
-
-.btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    padding: 14px 23px;
-    border-radius: 9px;
-    background: var(--blue);
-    color: white;
-    font-weight: 600;
-    font-size: 14px;
-    transition: .3s;
-    border: 1px solid transparent;
-}
-
-.btn:hover {
-    background: var(--cyan);
-    color: var(--navy);
-    transform: translateY(-3px);
-}
-
-.btn-outline {
-    background: transparent;
-    border-color: var(--border);
-}
-
-.btn-outline:hover {
-    border-color: var(--cyan);
-    color: white;
-    background: rgba(8,200,245,.08);
-}
-
-/* NAVIGATION */
-
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    background: rgba(7,23,47,.88);
-    backdrop-filter: blur(18px);
-    border-bottom: 1px solid var(--border);
-}
-
-.navbar {
-    height: 76px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 11px;
-    font-size: 19px;
-    font-weight: 800;
-}
-
-.brand img {
-    width: 43px;
-    height: 43px;
-    object-fit: contain;
-}
-
-.brand span {
-    color: var(--cyan);
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.nav-links a {
-    font-size: 13px;
-    color: var(--muted);
-    transition: .3s;
-}
-
-.nav-links a:hover {
-    color: var(--cyan);
-}
-
-.menu-btn {
-    display: none;
-    background: none;
-    color: white;
-    border: none;
-    font-size: 27px;
-    cursor: pointer;
-}
-
-/* HERO */
-
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 125px 0 75px;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    width: 550px;
-    height: 550px;
-    right: -180px;
-    top: 100px;
-    background: radial-gradient(circle, rgba(8,125,224,.2), transparent 70%);
-    pointer-events: none;
-}
-
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1.1fr .9fr;
-    align-items: center;
-    gap: 60px;
-}
-
-.tag {
-    display: inline-block;
-    padding: 9px 15px;
-    border: 1px solid rgba(8,200,245,.3);
-    color: var(--cyan);
-    border-radius: 30px;
-    font-size: 12px;
-    margin-bottom: 25px;
-    background: rgba(8,200,245,.06);
-}
-
-.hero h1 {
-    font-size: clamp(42px, 6vw, 70px);
-    line-height: 1.08;
-    letter-spacing: -3px;
-    margin-bottom: 25px;
-}
-
-.gradient-text {
-    background: linear-gradient(90deg, var(--blue), var(--cyan));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-.hero p {
-    color: var(--muted);
-    font-size: 16px;
-    line-height: 1.9;
-    max-width: 570px;
-}
-
-.hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 13px;
-    margin-top: 32px;
-}
-
-/* HERO VISUAL */
-
-.hero-visual {
-    min-height: 390px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.visual-circle {
-    width: 310px;
-    height: 310px;
-    border-radius: 50%;
-    border: 1px solid rgba(8,200,245,.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    animation: float 5s ease-in-out infinite;
-}
-
-.visual-circle::before,
-.visual-circle::after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    border: 1px solid rgba(8,125,224,.25);
-}
-
-.visual-circle::before {
-    inset: 25px;
-}
-
-.visual-circle::after {
-    inset: 55px;
-}
-
-.visual-logo {
-    width: 125px;
-    height: 125px;
-    object-fit: contain;
-    z-index: 2;
-    filter: drop-shadow(0 0 25px rgba(8,200,245,.35));
-}
-
-.float-card {
-    position: absolute;
-    padding: 15px 19px;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    background: rgba(13,35,66,.95);
-    font-size: 12px;
-    color: var(--cyan);
-    box-shadow: 0 15px 35px rgba(0,0,0,.2);
-}
-
-.card-one {
-    top: 35px;
-    right: 0;
-    animation: float 4s ease-in-out infinite;
-}
-
-.card-two {
-    bottom: 45px;
-    left: 0;
-    animation: float 5s ease-in-out infinite reverse;
-}
-
-.card-three {
-    bottom: 0;
-    right: 25px;
-    animation: float 4.5s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%,100% { transform: translateY(0); }
-    50% { transform: translateY(-13px); }
-}
-
-/* SECTION COMMON */
-
-section {
-    padding: 100px 0;
-}
-
-.section-heading {
-    text-align: center;
-    max-width: 650px;
-    margin: 0 auto 55px;
-}
-
-.section-heading .label {
-    color: var(--cyan);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.section-heading h2 {
-    font-size: clamp(30px, 4vw, 43px);
-    margin: 15px 0;
-    letter-spacing: -1px;
-}
-
-.section-heading p {
-    color: var(--muted);
-    line-height: 1.8;
-    font-size: 14px;
-}
-
-/* SERVICES */
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-}
-
-.service-card {
-    padding: 32px 27px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 15px;
-    transition: .35s;
-}
-
-.service-card:hover {
-    transform: translateY(-8px);
-    border-color: var(--cyan);
-    box-shadow: 0 15px 40px rgba(8,125,224,.12);
-}
-
-.service-icon {
-    width: 52px;
-    height: 52px;
-    border-radius: 12px;
-    background: rgba(8,125,224,.15);
-    display: grid;
-    place-items: center;
-    font-size: 24px;
-    margin-bottom: 25px;
-}
-
-.service-card h3 {
-    font-size: 18px;
-    margin-bottom: 14px;
-}
-
-.service-card p {
-    color: var(--muted);
-    font-size: 13px;
-    line-height: 1.8;
-}
-
-/* PROCESS */
-
-.process {
-    background: rgba(255,255,255,.02);
-}
-
-.process-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.process-card {
-    padding: 25px 20px;
-    border-left: 2px solid var(--blue);
-}
-
-.process-number {
-    color: var(--cyan);
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.process-card h3 {
-    margin: 15px 0 10px;
-    font-size: 17px;
-}
-
-.process-card p {
-    font-size: 13px;
-    line-height: 1.8;
-    color: var(--muted);
-}
-
-/* ABOUT */
-
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 65px;
-    align-items: center;
-}
-
-.about-content h2 {
-    font-size: clamp(30px, 4vw, 42px);
-    line-height: 1.2;
-    margin: 18px 0;
-}
-
-.about-content p {
-    color: var(--muted);
-    font-size: 14px;
-    line-height: 1.9;
-    margin-bottom: 16px;
-}
-
-.about-box {
-    background: linear-gradient(140deg, #0D2B50, #0A1D38);
-    padding: 40px;
-    border: 1px solid var(--border);
-    border-radius: 18px;
-}
-
-.about-box h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.about-box p {
-    color: var(--muted);
-    line-height: 1.8;
-    font-size: 14px;
-}
-
-/* QUICK LINKS */
-
-.quick-links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-    margin-top: 35px;
-}
-
-.quick-link {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 20px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 13px;
-    transition: .3s;
-}
-
-.quick-link:hover {
-    transform: translateY(-5px);
-    border-color: var(--cyan);
-    background: #102C4F;
-}
-
-.link-icon {
-    width: 45px;
-    height: 45px;
-    flex-shrink: 0;
-    display: grid;
-    place-items: center;
-    border-radius: 11px;
-    background: rgba(8,125,224,.17);
-    font-size: 21px;
-}
-
-.quick-link strong {
-    display: block;
-    font-size: 13px;
-    margin-bottom: 6px;
-}
-
-.quick-link small {
-    color: var(--muted);
-    font-size: 11px;
-}
-
-/* CONTACT */
-
-.contact {
-    background: linear-gradient(140deg, #0A2140, #07172F);
-    text-align: center;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-}
-
-.contact-content {
-    max-width: 650px;
-    margin: auto;
-}
-
-.contact h2 {
-    font-size: clamp(30px, 4vw, 43px);
-    margin: 17px 0;
-}
-
-.contact p {
-    color: var(--muted);
-    font-size: 14px;
-    line-height: 1.8;
-    margin-bottom: 28px;
-}
-
-/* FOOTER */
-
-footer {
-    padding: 35px 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.footer-brand {
-    font-size: 16px;
-    font-weight: 800;
-}
-
-.footer-brand span {
-    color: var(--cyan);
-}
-
-.footer-content p {
-    color: var(--muted);
-    font-size: 11px;
-}
-
-.footer-links {
-    display: flex;
-    gap: 20px;
-}
-
-.footer-links a {
-    font-size: 12px;
-    color: var(--muted);
-}
-
-.footer-links a:hover {
-    color: var(--cyan);
-}
-
-/* REVEAL ANIMATION */
-
-.reveal {
-    opacity: 0;
-    transform: translateY(25px);
-    transition: opacity .7s ease, transform .7s ease;
-}
-
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* RESPONSIVE */
-
-@media(max-width: 850px) {
-    .hero-grid,
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-visual {
-        min-height: 350px;
-    }
-
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .process-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .nav-links {
-        gap: 18px;
-    }
-}
-
-@media(max-width: 650px) {
-    .navbar {
-        height: 68px;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 68px;
-        left: 0;
-        width: 100%;
-        padding: 25px 5%;
-        background: #07172F;
-        border-bottom: 1px solid var(--border);
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 23px;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .hero {
-        padding-top: 115px;
-    }
-
-    .hero h1 {
-        letter-spacing: -2px;
-    }
-
-    .hero-visual {
-        min-height: 300px;
-    }
-
-    .visual-circle {
-        width: 240px;
-        height: 240px;
-    }
-
-    .visual-logo {
-        width: 100px;
-        height: 100px;
-    }
-
-    .float-card {
-        font-size: 10px;
-        padding: 11px;
-    }
-
-    section {
-        padding: 75px 0;
-    }
-
-    .services-grid,
-    .process-grid,
-    .quick-links {
-        grid-template-columns: 1fr;
-    }
-
-    .about-box {
-        padding: 28px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-
-@media(prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-        scroll-behavior: auto !important;
-        animation-duration: .01ms !important;
-        transition-duration: .01ms !important;
-    }
-
-    .reveal {
-        opacity: 1;
-        transform: none;
-    }
-}
+:root{--bg:#F6F7FB;--fg:#0E1233;--mut:#4B5173;--card:#fff;--line:#D9DDF0;--br:#2D4BFF;--sun:#FFC83D;--soft:#E3E9FF;--c3:#0E1233;--d:'Bricolage Grotesque','Arial Black',system-ui,sans-serif;--b:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0B0E26;--fg:#EEF0FF;--mut:#A3A9D1;--card:#151A40;--line:#262C5C;--br:#4C66FF;--soft:#1A2150;--c3:#1E2566;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#0B0E26;--fg:#EEF0FF;--mut:#A3A9D1;--card:#151A40;--line:#262C5C;--br:#4C66FF;--soft:#1A2150;--c3:#1E2566;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--fg);font:400 clamp(1rem,.95rem + .3vw,1.2rem)/1.6 var(--b);overflow-x:clip;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:61}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--d);line-height:1;letter-spacing:-.03em;font-weight:800}
+:focus-visible{outline:3px solid var(--br);outline-offset:3px}
+.wrap{width:min(1240px,100% - 2.5rem);margin-inline:auto}
+section{padding:clamp(4rem,10vw,9rem) 0}
+.eh{font-size:clamp(2.4rem,7vw,6.4rem);max-width:14ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.5rem;border-radius:99px;font:700 1rem var(--b);background:var(--br);color:#fff;border:0;cursor:pointer;transition:transform .3s,box-shadow .3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px -10px var(--br)}
+.btn.g{background:transparent;color:var(--fg);box-shadow:inset 0 0 0 2px var(--fg)}
+.btn.ic{width:42px;height:42px;padding:0}
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:60;padding:calc(env(safe-area-inset-top,0px) + 10px) 0 10px}
+.nav::before{content:"";position:absolute;inset:0;z-index:-1;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.nav .wrap{display:flex;align-items:center;gap:.8rem}
+.logo{display:flex;align-items:center;gap:.6rem;font:800 1.15rem var(--d);margin-right:auto;position:relative;z-index:2}
+.logo svg,.logo img{width:34px;height:34px;object-fit:contain;border-radius:8px}
+[hidden]{display:none!important}
+.links{display:flex;gap:1.5rem;font-weight:600}
+.links a:hover{color:var(--br)}
+.nav .btn.ic,.burger{position:relative;z-index:2}
+.burger{display:none}
+.pb{position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--sun);transform-origin:0 50%;transform:scaleX(var(--sp,0))}
+@media(max-width:900px){.links{position:fixed;inset:0;z-index:1;flex-direction:column;justify-content:center;align-items:center;gap:1.4rem;font:800 2.6rem var(--d);background:var(--bg);transform:translateY(-100%);transition:transform .5s cubic-bezier(.7,0,.2,1)}.nav.open .links{transform:none}.burger{display:inline-flex}.nav .cta-n{display:none}}
+/* hero: scroll-scrubbed small to online */
+.hero{height:280vh;position:relative}
+.stage{position:sticky;top:0;height:100svh;overflow:hidden;display:grid;place-items:start center}
+.copy{text-align:center;padding:calc(92px + 4vh) 1.25rem 0;max-width:1100px;opacity:max(0,calc(1 - var(--p)*2.6));transform:translateY(calc(var(--p)*-60px)) scale(calc(1 - var(--p)*.1))}
+.kick{display:inline-block;font-weight:700;color:var(--br);background:var(--soft);padding:.4rem 1rem;border-radius:99px;margin-bottom:1.2rem}
+h1{font-size:clamp(2.4rem,8.2vw,7.6rem)}
+.lead{max-width:44ch;margin:1.4rem auto 1.8rem;color:var(--mut)}
+.btns{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+.win{position:absolute;left:50%;top:calc(84% - 34%*var(--p));width:calc(120px + (min(1160px,92vw) - 120px)*var(--p));height:calc(92px + (66svh - 92px)*var(--p));transform:translate(-50%,-50%);border-radius:calc(24px - 10px*var(--p));background:var(--card);box-shadow:0 30px 80px -30px rgba(45,75,255,.6),0 0 0 2px var(--br);overflow:hidden}
+.shop{position:absolute;inset:0;margin:auto;width:56px;height:56px;opacity:max(0,calc(1 - var(--p)*6))}
+.bar{display:flex;gap:6px;align-items:center;padding:.7rem 1rem;border-bottom:1px solid var(--line);opacity:max(0,calc((var(--p) - .4)*2.4))}
+.bar i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.url{margin-left:.6rem;flex:1;background:var(--soft);border-radius:99px;padding:.15rem .9rem;font-size:.85rem;color:var(--mut)}
+.site{position:absolute;inset:46px 0 0;display:grid;grid-template-columns:1.2fr .8fr;gap:1rem;padding:clamp(1rem,3vw,2.5rem);align-content:center;opacity:max(0,calc((var(--p) - .5)*2.4))}
+.site h2{font-size:clamp(1.7rem,4.6vw,4.4rem);margin-bottom:1.2rem}
+.pills{display:grid;gap:.7rem;align-content:center}
+.pill{background:var(--soft);border-radius:16px;padding:.8rem 1rem;font-weight:700;font-size:clamp(.85rem,1.4vw,1.1rem);display:flex;align-items:center;gap:.6rem;animation:pop 6s infinite;animation-delay:calc(var(--n)*1.1s)}
+.pill::before{content:"";width:10px;height:10px;border-radius:50%;background:#18B26B;flex:none}
+.hint{position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:.85rem;color:var(--mut);opacity:max(0,calc(1 - var(--p)*8))}
+@keyframes pop{0%,8%{opacity:0;transform:translateY(18px) scale(.92)}18%,80%{opacity:1;transform:none}95%,100%{opacity:0}}
+@media(max-width:700px){.site{grid-template-columns:1fr;align-content:start}}
+@media(max-width:600px){.copy .g{display:none}.copy{padding-top:96px}}
+/* marquee driven by scroll */
+.mq{overflow:hidden;padding:3vw 0;border-block:2px solid var(--fg);padding-block:3vw}
+.row{display:flex;gap:3rem;white-space:nowrap;width:max-content;font:800 clamp(3rem,10vw,9rem)/1.05 var(--d);letter-spacing:-.04em}
+.r1{transform:translateX(calc(-60vw + var(--s,0)*1px))}
+.r2{transform:translateX(calc(-200vw - var(--s,0)*1px));color:transparent;-webkit-text-stroke:2px var(--fg)}
+/* services: sticky stack */
+.stack{margin-top:3rem}
+.pc{position:sticky;top:calc(84px + var(--i)*18px);min-height:min(68svh,620px);border-radius:32px;padding:clamp(1.5rem,4vw,3.5rem);margin-bottom:6vh;display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;overflow:hidden}
+.pc::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(520px circle at var(--mx,70%) var(--my,0),rgba(255,255,255,.22),transparent 60%)}
+.c1{background:var(--br);color:#fff}.c2{background:var(--sun);color:#0E1233}.c3{background:var(--c3);color:#fff}
+.pc h3{font-size:clamp(2.1rem,5.4vw,5rem);margin-bottom:1rem}
+.pc p{max-width:38ch;margin-bottom:1.5rem;opacity:.92}
+.pc .btn{background:#fff;color:#0E1233}.c2 .btn{background:#0E1233;color:#fff}
+.vis{display:grid;place-items:center;position:relative;min-height:200px}
+.vw,.vc{width:100%;max-width:380px;border-radius:18px;padding:1.3rem;box-shadow:0 24px 40px -22px rgba(0,0,0,.55)}
+.vw{background:#fff;display:grid;gap:.8rem}
+.vw b,.vw u{display:block;height:16px;border-radius:8px;background:#C9D3FF;transform-origin:0 50%;animation:grow 3s ease-in-out infinite alternate}
+.vw b:first-child{height:80px;background:#2D4BFF}.vw b:nth-child(2){animation-delay:.4s}.vw b:nth-child(3){animation-delay:.8s}
+.vw u{height:34px;width:40%;border-radius:99px;background:#0E1233;animation-delay:1.2s}
+.vc{background:#0E1233}
+.vc i{display:block;height:12px;border-radius:6px;margin:14px 0;background:var(--sun);width:var(--w);transform-origin:0 50%;animation:type 4s steps(12) infinite}
+.vc i:nth-child(2n){background:#7C8DFF}.vc i:nth-child(2){animation-delay:.3s}.vc i:nth-child(3){animation-delay:.6s}.vc i:nth-child(4){animation-delay:.9s}.vc i:nth-child(5){animation-delay:1.2s}
+.orb{width:min(260px,70%);aspect-ratio:1;border:2px dashed rgba(255,255,255,.6);border-radius:50%;position:relative;animation:spin 16s linear infinite}
+.orb::before,.orb::after{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:var(--sun);top:-11px;left:calc(50% - 11px)}
+.orb::after{top:auto;bottom:-11px;background:#fff}
+.star{position:absolute;width:88px;color:#fff;animation:pulse 2.4s ease-in-out infinite}
+@keyframes grow{from{transform:scaleX(.25)}to{transform:scaleX(1)}}
+@keyframes type{0%{transform:scaleX(0)}55%,100%{transform:scaleX(1)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{50%{transform:scale(1.25) rotate(20deg)}}
+@media(max-width:760px){.pc{grid-template-columns:1fr;min-height:auto}.vis{min-height:150px}}
+/* approach: growing steps */
+.pg{display:grid;grid-template-columns:.8fr 1.2fr;gap:4rem;align-items:start}
+.pg>*{min-width:0}
+.sl{position:sticky;top:110px}.sl p{margin-top:1.4rem;color:var(--mut);max-width:34ch}
+.steps{list-style:none;padding:0 0 0 3.2rem;position:relative;counter-reset:s}
+.steps::before,.steps::after{content:"";position:absolute;left:14px;top:0;bottom:0;width:4px;border-radius:4px;background:var(--line)}
+.steps::after{background:var(--br);transform-origin:0 0;transform:scaleY(var(--lp,0))}
+.steps li{position:relative;padding-bottom:clamp(4rem,12vh,8rem);opacity:.28;transition:opacity .5s}
+.steps li.on{opacity:1}
+.steps li::before{content:counter(s);counter-increment:s;position:absolute;z-index:1;left:calc(16px - 3.2rem);top:.15em;translate:-50% 0;width:calc(18px + var(--k)*10px);aspect-ratio:1;border-radius:50%;background:var(--br);color:#fff;display:grid;place-items:center;font:700 .8rem var(--b)}
+.steps h3{font-size:clamp(1.6rem,calc(1rem + var(--k)*1.2vw + var(--k)*.4rem),5rem);margin-bottom:.6rem}
+.steps p{color:var(--mut);max-width:34ch}
+@media(max-width:860px){.pg{grid-template-columns:1fr;gap:2.5rem}.sl{position:static}}
+/* about */
+.rv{font:600 clamp(1.7rem,4.2vw,3.8rem)/1.2 var(--d);letter-spacing:-.02em;max-width:24em;margin:2rem 0}
+.rv span{opacity:.16;transition:opacity .35s}.rv span.l{opacity:1}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:2rem;color:var(--mut);max-width:60rem}
+.mis{position:relative;overflow:hidden;margin-top:clamp(3rem,7vw,6rem);background:var(--soft);border-radius:clamp(28px,4vw,48px);padding:clamp(2rem,6vw,5rem)}
+.mis>*:not(.rings){position:relative;z-index:1;max-width:34rem}
+.mis h3{font-size:clamp(2rem,5.5vw,4.6rem);margin-bottom:1rem}.mis p{margin-bottom:1.6rem;color:var(--mut)}
+.rings{position:absolute;right:14%;top:50%}
+.rings i{position:absolute;width:560px;height:560px;border:2px solid var(--br);border-radius:50%;animation:ring 6s ease-out infinite;animation-delay:calc(var(--n)*2s);opacity:0}
+@keyframes ring{from{transform:translate(-50%,-50%) scale(.1);opacity:1}to{transform:translate(-50%,-50%) scale(1);opacity:0}}
+@media(max-width:700px){.two{grid-template-columns:1fr}}
+/* founder */
+.fg{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.badge{position:relative;width:min(260px,80%);aspect-ratio:1;margin:auto;display:grid;place-items:center}
+.ring{position:absolute;inset:0;animation:spin 24s linear infinite;fill:var(--fg);font:600 13px var(--b)}
+.badge b{width:62%;aspect-ratio:1;border-radius:50%;background:var(--br);color:#fff;display:grid;place-items:center;font:800 clamp(3rem,9vw,6rem) var(--d);letter-spacing:-.04em;transition:transform .6s cubic-bezier(.3,1.6,.4,1)}
+.ph{width:min(164px,63%);aspect-ratio:1;border-radius:50%;object-fit:cover;object-position:50% 20%;box-shadow:0 0 0 6px var(--br);transition:transform .6s cubic-bezier(.3,1.6,.4,1)}
+.badge:hover b,.badge:hover .ph{transform:scale(1.06) rotate(-5deg)}
+.fg h3{font-size:clamp(1.8rem,4vw,3.2rem);margin:1.2rem 0 .6rem}.fg p{color:var(--mut);max-width:46ch}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:1.6rem}
+.tile{border:2px solid var(--fg);border-radius:22px;padding:1.2rem 1.4rem;transition:background .3s,color .3s,transform .3s}
+.tile:hover{background:var(--fg);color:var(--bg);transform:rotate(-1.2deg)}
+.tile b{display:block;font:800 1.2rem var(--d)}
+@media(max-width:800px){.fg{grid-template-columns:1fr}}
+/* contact + footer */
+.cta{background:var(--br);color:#fff;border-radius:clamp(28px,5vw,64px) clamp(28px,5vw,64px) 0 0;position:relative;overflow:hidden;padding-bottom:2rem}
+.cta h2{font-size:clamp(2.8rem,11vw,10rem);max-width:11ch;margin-bottom:1.5rem}
+.cta p{max-width:44ch;margin-bottom:2rem}
+.btn.w{background:#fff;color:#2D4BFF;font-size:clamp(1.1rem,2.4vw,1.8rem);padding:1.3rem 2.4rem}
+.sh{position:absolute;border-radius:50%;animation:fl 9s ease-in-out infinite alternate}
+.s1{width:clamp(120px,20vw,280px);aspect-ratio:1;background:var(--sun);right:6%;top:12%}
+.s2{width:clamp(70px,12vw,160px);aspect-ratio:1;border:3px solid #fff;right:24%;top:46%;animation-delay:-3s}
+@keyframes fl{to{transform:translate(-30px,40px) scale(1.15)}}
+.wm{font:800 clamp(3.4rem,17vw,16rem)/.85 var(--d);letter-spacing:-.06em;margin-top:clamp(3rem,8vw,6rem)}
+.wm small{font-size:.16em;letter-spacing:0;font-weight:600;margin-right:.3em}
+.ft{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;border-top:1px solid rgba(255,255,255,.35);padding-top:1.2rem;margin-top:2rem;font-size:.95rem}
+.ft nav{display:flex;gap:1.5rem}
+/* cursor */
+.cur{display:none}
+@media(hover:hover) and (pointer:fine){.cur{display:block;position:fixed;left:0;top:0;z-index:99;pointer-events:none}.cur::before{content:"";display:block;width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;background:#fff;mix-blend-mode:difference;transition:width .25s,height .25s,margin .25s}.cur.big::before{width:64px;height:64px;margin:-32px 0 0 -32px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.hero{height:auto;padding-top:1rem}.stage{position:static;height:auto;display:block;padding-bottom:3rem}.copy{opacity:1!important;transform:none!important}.win{position:relative;left:auto;top:auto;transform:none;margin:2rem auto 0}.hint,.shop{display:none}.r1{transform:none}.r2{transform:none}.pc{position:relative;top:auto}}
 </style>
 </head>
-
 <body>
-
-<header>
-    <div class="container navbar">
-
-        <a href="#home" class="brand">
-            <img src="logo.png" alt="Small to Online logo">
-            <div>Small to <span>Online.</span></div>
-        </a>
-
-        <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
-
-        <nav class="nav-links" id="navLinks">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#founder">Founder</a>
-            <a href="#contact" class="btn">Get Started →</a>
-        </nav>
-
-    </div>
+<div class="cur" aria-hidden="true"></div>
+<header class="nav">
+<div class="wrap">
+<a class="logo" href="#home" aria-label="Small to Online home"><img data-img src="https://smalltoonline.in/logo.png" alt="" width="34" height="34"><svg hidden viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="10" fill="#2D4BFF"/><rect x="7" y="19" width="8" height="8" rx="2" fill="#fff"/><rect x="13" y="8" width="14" height="14" rx="3.5" fill="#FFC83D"/></svg>Small to Online</a>
+<nav class="links" aria-label="Main"><a href="#home">Home</a><a href="#services">Services</a><a href="#approach">Approach</a><a href="#about">About</a><a href="#founder">Founder</a></nav>
+<button class="btn ic g" id="th" aria-label="Toggle light or dark theme">◐</button>
+<a class="btn cta-n mag" href="#contact">Get started</a>
+<button class="btn ic burger" aria-label="Open menu" aria-expanded="false">☰</button>
+</div>
+<div class="pb"></div>
 </header>
-
 <main>
-
-<!-- HERO -->
-
-<section class="hero" id="home">
-    <div class="container hero-grid">
-
-        <div class="hero-content reveal">
-
-            <span class="tag">Technology for Everyone</span>
-
-            <h1>
-                Big ideas deserve a
-                <span class="gradient-text">digital presence.</span>
-            </h1>
-
-            <p>
-                We help small businesses, entrepreneurs and startups
-                turn their ideas into reality through affordable websites,
-                custom software and AI-powered solutions.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#contact" class="btn">Start Your Project →</a>
-                <a href="#services" class="btn btn-outline">Explore Services</a>
-            </div>
-
-        </div>
-
-        <div class="hero-visual reveal">
-
-            <div class="visual-circle">
-                <img src="logo.png" alt="Small to Online" class="visual-logo">
-            </div>
-
-            <div class="float-card card-one">✦ Website Development</div>
-            <div class="float-card card-two">⚙ Custom Software</div>
-            <div class="float-card card-three">✧ AI-Powered Solutions</div>
-
-        </div>
-
-    </div>
+<section class="hero" id="home" style="--p:0;padding:0">
+<div class="stage">
+<div class="copy">
+<p class="kick">Technology for everyone</p>
+<h1>Big ideas deserve a digital presence.</h1>
+<p class="lead">We help small businesses, entrepreneurs and startups turn their ideas into reality through affordable websites, custom software and AI-powered solutions.</p>
+<div class="btns"><a class="btn" href="#contact">Start your project</a><a class="btn g" href="#services">Explore services</a></div>
+</div>
+<div class="win" aria-hidden="true">
+<svg class="shop" viewBox="0 0 64 64"><path d="M8 24l6-12h36l6 12z" fill="#2D4BFF"/><path d="M8 24h48v3a8 8 0 0 1-16 0 8 8 0 0 1-16 0 8 8 0 0 1-16 0z" fill="#FFC83D"/><rect x="12" y="34" width="40" height="20" fill="#C9D3FF"/><rect x="26" y="40" width="12" height="14" fill="#2D4BFF"/></svg>
+<div class="bar"><i></i><i></i><i></i><span class="url">smalltoonline.in</span></div>
+<div class="site"><div><h2>Your shop. Open 24×7.</h2><span class="btn">Order now</span></div>
+<div class="pills"><div class="pill" style="--n:0">New order ₹1,299</div><div class="pill" style="--n:1">Booking confirmed</div><div class="pill" style="--n:2">★★★★★ New review</div></div></div>
+</div>
+<p class="hint">Scroll and watch a small shop go online</p>
+</div>
 </section>
 
-<!-- SERVICES -->
+<div class="mq" aria-hidden="true">
+<div class="row r1"><span>Your café is online.</span><span>Your studio is online.</span><span>Your classes are online.</span><span>Your boutique is online.</span></div>
+<div class="row r2"><span>Small shops. Big screens.</span><span>Small shops. Big screens.</span><span>Small shops. Big screens.</span><span>Small shops. Big screens.</span></div>
+</div>
 
 <section id="services">
-    <div class="container">
-
-        <div class="section-heading reveal">
-            <span class="label">What We Do</span>
-            <h2>Technology that moves you forward.</h2>
-            <p>
-                Practical digital solutions designed to help your business
-                establish its presence and work smarter.
-            </p>
-        </div>
-
-        <div class="services-grid">
-
-            <div class="service-card reveal">
-                <div class="service-icon">🌐</div>
-                <h3>Website Development</h3>
-                <p>
-                    Modern, responsive static and dynamic websites
-                    designed to give your business a professional
-                    online identity.
-                </p>
-            </div>
-
-            <div class="service-card reveal">
-                <div class="service-icon">⚙️</div>
-                <h3>Custom Software Development</h3>
-                <p>
-                    Useful software solutions designed around your
-                    business requirements to simplify everyday work.
-                </p>
-            </div>
-
-            <div class="service-card reveal">
-                <div class="service-icon">🤖</div>
-                <h3>AI-Powered Solutions</h3>
-                <p>
-                    AI-assisted website and software development
-                    that helps make digital solutions more accessible
-                    and efficient.
-                </p>
-            </div>
-
-        </div>
-    </div>
+<div class="wrap">
+<h2 class="eh">Technology that moves you forward.</h2>
+<p class="lead" style="margin-left:0">Practical digital solutions designed to help your business establish its presence and work smarter.</p>
+<div class="stack">
+<article class="pc c1" style="--i:0"><div><h3>Website development</h3><p>Modern, responsive static and dynamic websites designed to give your business a professional online identity.</p><a class="btn" href="#contact">Plan my website</a></div><div class="vis" aria-hidden="true"><div class="vw"><b></b><b></b><b></b><u></u></div></div></article>
+<article class="pc c2" style="--i:1"><div><h3>Custom software</h3><p>Useful software solutions designed around your business requirements to simplify everyday work.</p><a class="btn" href="#contact">Discuss my software</a></div><div class="vis" aria-hidden="true"><div class="vc"><i style="--w:70%"></i><i style="--w:92%"></i><i style="--w:48%"></i><i style="--w:80%"></i><i style="--w:60%"></i></div></div></article>
+<article class="pc c3" style="--i:2"><div><h3>AI-powered solutions</h3><p>AI-assisted website and software development that helps make digital solutions more accessible and efficient.</p><a class="btn" href="#contact">Explore AI for me</a></div><div class="vis" aria-hidden="true"><div class="orb"></div><svg class="star" viewBox="0 0 24 24"><path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12 7-1 11-5 12-12z" fill="currentColor"/></svg></div></article>
+</div>
+</div>
 </section>
 
-<!-- PROCESS -->
-
-<section class="process">
-    <div class="container">
-
-        <div class="section-heading reveal">
-            <span class="label">Our Approach</span>
-            <h2>From idea to reality.</h2>
-            <p>A simple and transparent approach to building your digital solution.</p>
-        </div>
-
-        <div class="process-grid">
-
-            <div class="process-card reveal">
-                <span class="process-number">01 / UNDERSTAND</span>
-                <h3>Understand</h3>
-                <p>We listen to your idea and understand your requirements.</p>
-            </div>
-
-            <div class="process-card reveal">
-                <span class="process-number">02 / PLAN</span>
-                <h3>Plan</h3>
-                <p>We plan a suitable solution around your goals and budget.</p>
-            </div>
-
-            <div class="process-card reveal">
-                <span class="process-number">03 / DEVELOP</span>
-                <h3>Develop</h3>
-                <p>We build your website or software using modern technology.</p>
-            </div>
-
-            <div class="process-card reveal">
-                <span class="process-number">04 / DELIVER</span>
-                <h3>Deliver</h3>
-                <p>We deliver your completed digital solution.</p>
-            </div>
-
-        </div>
-    </div>
+<section id="approach">
+<div class="wrap pg">
+<div class="sl"><h2 class="eh">From idea to reality.</h2><p>A simple and transparent approach to building your digital solution. Every step gets bigger, just like your business.</p></div>
+<ol class="steps">
+<li style="--k:1"><h3>Understand</h3><p>We listen to your idea and understand your requirements.</p></li>
+<li style="--k:2"><h3>Plan</h3><p>We plan a suitable solution around your goals and budget.</p></li>
+<li style="--k:3"><h3>Develop</h3><p>We build your website or software using modern technology.</p></li>
+<li style="--k:4"><h3>Deliver</h3><p>We deliver your completed digital solution.</p></li>
+</ol>
+</div>
 </section>
-
-<!-- ABOUT -->
 
 <section id="about">
-    <div class="container about-grid">
-
-        <div class="about-content reveal">
-
-            <span class="label">About Small to Online</span>
-
-            <h2>
-                Small businesses.
-                <span class="gradient-text">Big digital possibilities.</span>
-            </h2>
-
-            <p>
-                Small to Online is an emerging technology startup
-                focused on making digital technology accessible and
-                affordable for small businesses, entrepreneurs and startups.
-            </p>
-
-            <p>
-                We build modern websites, custom software and AI-powered
-                digital solutions to help businesses establish and grow
-                their online presence.
-            </p>
-
-            <p>
-                Our goal is simple: every small business deserves an
-                opportunity to grow in the digital world, regardless
-                of its size or budget.
-            </p>
-
-            <a href="#contact" class="btn">Let's Work Together →</a>
-
-        </div>
-
-        <div class="about-box reveal">
-            <h3>Your Business. Our Technology.</h3>
-            <p>
-                We believe that great ideas should not stay offline
-                because of limited resources. Our mission is to make
-                technology simpler, smarter and more accessible.
-            </p>
-        </div>
-
-    </div>
+<div class="wrap">
+<h2 class="eh">Small businesses. Big digital possibilities.</h2>
+<p class="rv" id="rv">Small to Online is an emerging technology startup focused on making digital technology accessible and affordable for small businesses, entrepreneurs and startups.</p>
+<div class="two"><p>We build modern websites, custom software and AI-powered digital solutions to help businesses establish and grow their online presence.</p><p>Our goal is simple: every small business deserves an opportunity to grow in the digital world, regardless of its size or budget.</p></div>
+<div class="mis"><div class="rings"><i style="--n:0"></i><i style="--n:1"></i><i style="--n:2"></i></div>
+<h3>Your business. Our technology.</h3><p>We believe that great ideas should not stay offline because of limited resources. Our mission is to make technology simpler, smarter and more accessible.</p><a class="btn mag" href="#contact">Let’s work together</a></div>
+</div>
 </section>
-
-<!-- FOUNDER -->
 
 <section id="founder">
-    <div class="container">
-
-        <div class="section-heading reveal">
-            <span class="label">Behind the Idea</span>
-            <h2>Meet the Founder</h2>
-            <p>
-                Every idea has a person behind it. Get to know the person
-                building Small to Online.
-            </p>
-        </div>
-
-        <div class="about-box reveal" style="max-width:750px; margin:auto; text-align:center;">
-
-            <h3>Yashraj Modugade</h3>
-
-            <p>
-                Founder of Small to Online. A student passionate about
-                technology, website development and software innovation.
-                Building digital solutions with one simple belief:
-                technology should be accessible to everyone.
-            </p>
-
-            <a href="https://yashrajmodugade.tech"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn">
-                View My Portfolio ↗
-            </a>
-
-        </div>
-
-        <div class="quick-links">
-
-            <a href="https://yashrajmodugade.tech"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="quick-link reveal">
-
-                <span class="link-icon">👨‍💻</span>
-
-                <span>
-                    <strong>Explore Founder's Portfolio</strong>
-                    <small>Know more about the founder →</small>
-                </span>
-
-            </a>
-
-            <a href="https://www.instagram.com/smalltoonline/"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="quick-link reveal">
-
-                <span class="link-icon">📸</span>
-
-                <span>
-                    <strong>Follow Small to Online</strong>
-                    <small>Visit our Instagram page →</small>
-                </span>
-
-            </a>
-
-        </div>
-
-    </div>
+<div class="wrap fg">
+<div class="badge"><svg class="ring" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="cp" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs><text><textPath href="#cp" textLength="495" lengthAdjust="spacing">Founder • Student • Builder • Founder • Student • Builder •</textPath></text></svg><img class="ph" data-img src="https://www.yashrajmodugade.tech/yashraj-modugade.jpg" alt="Yashraj Modugade, founder of Small to Online" width="164" height="164" loading="lazy" referrerpolicy="no-referrer"><b hidden>YM</b></div>
+<div>
+<h2 class="eh">Meet the founder</h2>
+<h3>Yashraj Modugade</h3>
+<p>Founder of Small to Online. A student passionate about technology, website development and software innovation. Building digital solutions with one simple belief: technology should be accessible to everyone.</p>
+<div class="tiles"><a class="tile" href="https://yashrajmodugade.tech" target="_blank" rel="noopener"><b>Explore the founder’s portfolio</b>Know more about the founder ↗</a><a class="tile" href="https://www.instagram.com/smalltoonline/" target="_blank" rel="noopener"><b>Follow Small to Online</b>Visit our Instagram page ↗</a></div>
+</div>
+</div>
 </section>
 
-<!-- CONTACT -->
-
-<section class="contact" id="contact">
-    <div class="container contact-content reveal">
-
-        <span class="label">Let's Get Started</span>
-
-        <h2>Have an idea? Let's build it.</h2>
-
-        <p>
-            Whether you are a small business owner, entrepreneur or
-            startup founder, tell us about your idea. Let's explore
-            how technology can help you.
-        </p>
-
-        <!-- Replace this URL with your actual Google Form link -->
-        <a href="https://forms.gle/kz6NhTAmr4dRGmoPA"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="btn">
-            Contact Us Through Google Form →
-        </a>
-
-    </div>
+<section class="cta" id="contact">
+<i class="sh s1"></i><i class="sh s2"></i>
+<div class="wrap" style="position:relative">
+<h2>Have an idea? Let’s build it.</h2>
+<p>Whether you are a small business owner, entrepreneur or startup founder, tell us about your idea. Let’s explore how technology can help you.</p>
+<a class="btn w mag" href="https://forms.gle/kz6NhTAmr4dRGmoPA" target="_blank" rel="noopener">Contact us through Google Form</a>
+<p class="wm" aria-label="Small to Online"><small>Small to</small>Online.</p>
+<footer class="ft"><span>From Small to Online. © <span id="yr">2026</span> Small to Online. All rights reserved.</span><nav aria-label="Footer"><a href="https://yashrajmodugade.tech" target="_blank" rel="noopener">Founder</a><a href="https://www.instagram.com/smalltoonline/" target="_blank" rel="noopener">Instagram</a><a href="#contact">Contact</a></nav></footer>
+</div>
 </section>
-
 </main>
-
-<!-- FOOTER -->
-
-<footer>
-    <div class="container footer-content">
-
-        <div>
-            <div class="footer-brand">
-                Small to <span>Online.</span>
-            </div>
-            <p style="margin-top:8px;">From Small to Online.</p>
-        </div>
-
-        <div class="footer-links">
-            <a href="https://yashrajmodugade.tech"
-               target="_blank"
-               rel="noopener noreferrer">Founder</a>
-
-            <a href="https://www.instagram.com/smalltoonline/"
-               target="_blank"
-               rel="noopener noreferrer">Instagram</a>
-
-            <a href="#contact">Contact</a>
-        </div>
-
-        <p>© <span id="year"></span> Small to Online. All rights reserved.</p>
-
-    </div>
-</footer>
-
 <script>
-
-// MOBILE NAVIGATION
-
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
-
-menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-
-    const isOpen = navLinks.classList.contains("active");
-
-    menuBtn.textContent = isOpen ? "✕" : "☰";
-    menuBtn.setAttribute("aria-expanded", isOpen);
-});
-
-document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
-        menuBtn.textContent = "☰";
-        menuBtn.setAttribute("aria-expanded", "false");
-    });
-});
-
-// SCROLL REVEAL
-
-const observer = new IntersectionObserver((entries) => {
-
-    entries.forEach(entry => {
-
-        if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-        }
-
-    });
-
-}, {
-    threshold: 0.12
-});
-
-document.querySelectorAll(".reveal").forEach(element => {
-    observer.observe(element);
-});
-
-// AUTOMATIC COPYRIGHT YEAR
-
-document.getElementById("year").textContent = new Date().getFullYear();
-
+(()=>{
+const d=document,R=d.documentElement,$=s=>d.querySelector(s),$$=s=>[...d.querySelectorAll(s)],cl=(v,a=0,b=1)=>Math.min(b,Math.max(a,v));
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const hero=$('.hero'),mq=$('.mq'),st=$('.steps'),steps=$$('.steps li'),rv=$('#rv');
+$('#yr').textContent=new Date().getFullYear();
+$$('img[data-img]').forEach(i=>{const f=i.nextElementSibling,sw=()=>{i.hidden=true;f.hidden=false};i.complete&&!i.naturalWidth?sw():i.addEventListener('error',sw)});
+rv.innerHTML=rv.textContent.trim().split(/\s+/).map(w=>'<span>'+w+'</span>').join(' ');
+const ws=[...rv.children];
+function tick(){
+const H=innerHeight,hr=hero.getBoundingClientRect();
+hero.style.setProperty('--p',rm?1:cl(-hr.top/(hr.height-H)).toFixed(4));
+R.style.setProperty('--sp',cl(scrollY/(R.scrollHeight-H)).toFixed(4));
+const m=mq.getBoundingClientRect();mq.style.setProperty('--s',((m.top+m.height/2-H/2)*.6).toFixed(1));
+const s=st.getBoundingClientRect();st.style.setProperty('--lp',cl((H*.6-s.top)/s.height).toFixed(3));
+steps.forEach(l=>l.classList.toggle('on',l.getBoundingClientRect().top<H*.65));
+const a=rv.getBoundingClientRect(),pr=cl((H*.85-a.top)/(H*.55+a.height*.4));
+ws.forEach((w,i)=>w.classList.toggle('l',i<pr*ws.length*1.05));
+}
+let t=0;addEventListener('scroll',()=>{t||(t=requestAnimationFrame(()=>{t=0;tick()}))},{passive:true});addEventListener('resize',tick);tick();
+const nv=$('.nav'),bg=$('.burger');
+bg.onclick=()=>{const o=nv.classList.toggle('open');bg.setAttribute('aria-expanded',o)};
+$$('.links a').forEach(a=>a.onclick=()=>{nv.classList.remove('open');bg.setAttribute('aria-expanded',false)});
+$('#th').onclick=()=>{const dk=R.dataset.theme?R.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;R.dataset.theme=dk?'light':'dark'};
+$$('.pc').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',e.clientX-r.left+'px');c.style.setProperty('--my',e.clientY-r.top+'px')}));
+$$('.mag').forEach(m=>{m.addEventListener('pointermove',e=>{if(e.pointerType!=='mouse')return;const r=m.getBoundingClientRect();m.style.transform='translate('+(e.clientX-r.left-r.width/2)*.25+'px,'+(e.clientY-r.top-r.height/2)*.35+'px)'});m.addEventListener('pointerleave',()=>m.style.transform='')});
+const cu=$('.cur');
+addEventListener('pointermove',e=>{if(e.pointerType!=='mouse')return;cu.style.transform='translate('+e.clientX+'px,'+e.clientY+'px)';cu.classList.toggle('big',!!e.target.closest('a,button'))});
+})();
 </script>
-
 </body>
 </html>
